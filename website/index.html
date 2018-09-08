@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>::My Shop::</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+
+	<!--==main header==-->
+	<div id="main-header"> 
+	<div id="logo">
+<span id="ist">Women's</span>
+<span id="iist">Shop.com</span>
+	</div>
+	<!--==<div>
+	<img src="logo.jpg" alt="logo" width="10" height="50">
+	</div>==-->
+	
+	<div id="search">
+		<form action="">
+			<input class="search-area" type="text" name="text" placeholder="search here">
+			<input class="search-btn" type="submit" name="submit" value="SEARCH">
+		</form>
+	</div>
+	<!--==user-menu==-->
+	<div id="user-menu">
+		<li><a href="#"><i class="fa fa-shopping-cart" style="font-size:30px"></i>Cart</a></li>
+		<li><a href="#">Login</a></li>
+	</div>
+</div>
+</div>
+<!--==navigation bar==-->
+
+<div id="navigation">
+	<ul>
+	    <li><a href="#"><i class="fa fa-home" style="font-size:24px"></i>Homes</a></li>
+		<li><a href="#">News In</a>
+		<ul>
+ 		<li><a>Shoes</a></li>
+ 		<li><a>Bags</a></li>
+ 	</ul>
+ 	</li>
+		<li><a href="#">Shoes</a>
+		<ul>
+ 		<li><a>Women's Shoes</a></li>
+ 		<li><a>Women's Flat</a></li>
+ 		<li><a>Women's Heels</a></li>
+ 		<li><a>Women's Sandals</a></li>
+ 		</ul>
+ 	</li>
+		<li><a href="#">Bags</a>
+		<ul>
+ 		<li><a>Backpacks</a></li>
+ 		<li><a>Cluthes</a></li>
+ 		<li><a>Crossbody Bags</a></li>
+ 	</ul>
+ 	</li>
+		<li><a href="#">3 For 999 Shoes</a></li>
+		<li><a href="#">2 For 999 Shoes</a></li>
+	</ul>
+</div>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  border: 2px solid black;
+  margin-top: 250px;
+  margin-left: 200px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="images/4.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="images/5.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="images/6.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+      
+<!--==category
+<div class="container">
+	<div id="heading-block">
+		<h2>Offers</h2>
+</div>
+</div>
+<!--==offer
+<div class="offer">
+ <a href="#"><img src="images/8.jpg"></a>
+</div>
+<div class="offer">
+ <a href="#"><img src="images/7.jpg"></a>
+</div>
+</div>==-->
+
+ <!--==<div id="footer">
+ 	<div class="container">
+ 		
+ 		<div class="footer_sub_1">
+ 			<center>
+ 				<h2>Important Links</h2>
+ 				<ul>
+ 					<li><a href="#">Home</a></li>
+ 					<li><a href="#"><i class="fa fa-dropbox" style="font-size:30px"></i></a></li>
+ 					<li><a href="#"><i class="fa fa-comments-o" style="font-size:30px"></i></a></li>
+ 					<li><a href="#"><i class="fa fa-envelope-o" style="font-size:30px"></i></a></li>
+ 					<li><a href="#">Order</a></li>
+ 					<li><a href="#">Products</a></li>
+ 				</ul>
+ 			</center>
+ 		</div>
+ 		<div class="footer_sub_2">
+ 			<center>
+ 				<h2>Social Links</h2>
+ 				<ul>
+ 					<li><a href="#"><i class="fa fa-facebook-square" style="font-size:30px"></i></a></li>
+ 					<li><a href="#"><i class="fa fa-google-plus" style="font-size:30px"></i></a></li>
+ 					<li><a href="#"><i class="fa fa-youtube" style="font-size:30px"></i></a></li>
+ 					<li><a href="#"><i class="fa fa-twitter" style="font-size:30px"></i></a></li>
+ 					<li><a href="#"><i class="fa fa-linkedin" style="font-size:30px"></i></a></li>
+ 					<li><a href="#"><i class="fa fa-instagram" style="font-size:30px"></i></a></li>
+ 				</ul>
+ 			</center>
+ 		</div>
+ 		<div class="footer_sub_3">
+ 		<center>
+ 		<h2>Subscribe us</h2>
+ 			<input type="text" name="subs" placeholder="Write your e-mail" class="subs">
+ 			<input type="submit" name="submit_btn" value="Subscribe" class="subs_btn">
+ 			</center>
+ 			<p class="sub_p">Enter your e-mail id for getting notification by us</p>
+ 		</div>
+ 		
+ 	</div>
+ </div>==-->
+ <div class="footer-main-div">
+   <div class="footer-social-icons">
+     <ul>
+       <li><a href="#" target="blank"><i class="fa fa-facebook"></i></a></li>
+       <li><a href="#" target="blank"><i class="fa fa-twitter"></i></a></li>
+       <li><a href="#" target="blank"><i class="fa fa-google-plus"></i></a></li>
+       <li><a href="#" target="blank"><i class="fa fa-youtube"></i></a></li>
+     </ul>
+   </div>
+<div class="footer-menu-one">
+  <ul>
+    <li><a href="#">Home</a></li>
+     <li><a href="#">About Us</a></li>
+      <li><a href="#">Services</a></li>
+       <li><a href="#">Products</a></li>
+       <li><a href="#">Contact Us</a></li>
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+ </div>
+
+</div>
+
+
+
+
+
+
+
+
+</body>
+</html>
